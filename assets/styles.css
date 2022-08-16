@@ -53,11 +53,12 @@ main {
 }
 
 .div-validade {
-    margin-top: 50px;
+    margin-top    : 50px;
     font-size     : 1.5em;
     font-weight   : 800;
     letter-spacing: 1px;
     text-transform: uppercase;
     display       : flex;
     align-items   : center;
+    text-align    : center;
 }

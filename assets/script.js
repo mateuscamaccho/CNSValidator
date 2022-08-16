@@ -35,7 +35,7 @@ function validarCns(cns) {
     if (cns.length != 15) {
         console.log('menos de 15 digitos')
 
-        element.textContent = 'O numero está incorreto, inferior a 15 digitos!';
+        element.textContent = 'O número está incorreto, inferior a 15 digitos!';
     } else {
 
         var soma;
@@ -45,34 +45,34 @@ function validarCns(cns) {
         var resultado = new String("");
         if (cns.substring(0, 1) == 1 || cns.substring(0, 1) == 2) {
             pis = cns.substring(0, 11);
-            soma = (((parseFloat(pis.substring(0, 1)) | 0)) * 15) + 
-                   (((parseFloat(pis.substring(1, 2)) | 0)) * 14) + 
-                   (((parseFloat(pis.substring(2, 3)) | 0)) * 13) + 
-                   (((parseFloat(pis.substring(3, 4)) | 0)) * 12) + 
-                   (((parseFloat(pis.substring(4, 5)) | 0)) * 11) + 
-                   (((parseFloat(pis.substring(5, 6)) | 0)) * 10) + 
-                   (((parseFloat(pis.substring(6, 7)) | 0)) * 9) + 
-                   (((parseFloat(pis.substring(7, 8)) | 0)) * 8) +
-                   (((parseFloat(pis.substring(8, 9)) | 0)) * 7) + 
-                   (((parseFloat(pis.substring(9, 10)) | 0)) * 6) + 
-                   (((parseFloat(pis.substring(10, 11)) | 0)) * 5);
+            soma = (((parseFloat(pis.substring(0, 1)) | 0)) * 15) +
+                (((parseFloat(pis.substring(1, 2)) | 0)) * 14) +
+                (((parseFloat(pis.substring(2, 3)) | 0)) * 13) +
+                (((parseFloat(pis.substring(3, 4)) | 0)) * 12) +
+                (((parseFloat(pis.substring(4, 5)) | 0)) * 11) +
+                (((parseFloat(pis.substring(5, 6)) | 0)) * 10) +
+                (((parseFloat(pis.substring(6, 7)) | 0)) * 9) +
+                (((parseFloat(pis.substring(7, 8)) | 0)) * 8) +
+                (((parseFloat(pis.substring(8, 9)) | 0)) * 7) +
+                (((parseFloat(pis.substring(9, 10)) | 0)) * 6) +
+                (((parseFloat(pis.substring(10, 11)) | 0)) * 5);
             resto = soma % 11;
             dv = 11 - resto;
             if (dv === 11) {
                 dv = 0;
             }
             if (dv === 10) {
-                soma = (((parseFloat(pis.substring(0, 1)) | 0)) * 15) + 
-                (((parseFloat(pis.substring(1, 2)) | 0)) * 14) + 
-                (((parseFloat(pis.substring(2, 3)) | 0)) * 13) + 
-                (((parseFloat(pis.substring(3, 4)) | 0)) * 12) + 
-                (((parseFloat(pis.substring(4, 5)) | 0)) * 11) + 
-                (((parseFloat(pis.substring(5, 6)) | 0)) * 10) + 
-                (((parseFloat(pis.substring(6, 7)) | 0)) * 9) + 
-                (((parseFloat(pis.substring(7, 8)) | 0)) * 8) + 
-                (((parseFloat(pis.substring(8, 9)) | 0)) * 7) + 
-                (((parseFloat(pis.substring(9, 10)) | 0)) * 6) + 
-                (((parseFloat(pis.substring(10, 11)) | 0)) * 5) + 2;
+                soma = (((parseFloat(pis.substring(0, 1)) | 0)) * 15) +
+                    (((parseFloat(pis.substring(1, 2)) | 0)) * 14) +
+                    (((parseFloat(pis.substring(2, 3)) | 0)) * 13) +
+                    (((parseFloat(pis.substring(3, 4)) | 0)) * 12) +
+                    (((parseFloat(pis.substring(4, 5)) | 0)) * 11) +
+                    (((parseFloat(pis.substring(5, 6)) | 0)) * 10) +
+                    (((parseFloat(pis.substring(6, 7)) | 0)) * 9) +
+                    (((parseFloat(pis.substring(7, 8)) | 0)) * 8) +
+                    (((parseFloat(pis.substring(8, 9)) | 0)) * 7) +
+                    (((parseFloat(pis.substring(9, 10)) | 0)) * 6) +
+                    (((parseFloat(pis.substring(10, 11)) | 0)) * 5) + 2;
                 resto = soma % 11;
                 dv = 11 - resto;
                 resultado = pis + "001" + /* valueOf */ String((dv | 0)).toString();
@@ -81,33 +81,33 @@ function validarCns(cns) {
                 resultado = pis + "000" + /* valueOf */ String((dv | 0)).toString();
             }
             if (!(cns === resultado)) {
-                element.textContent = 'Este numero de CNS não é válido!';
+                element.textContent = 'Este número de CNS não é válido!';
             }
             else {
-                element.textContent = 'Este numero de CNS é válido!';
+                element.textContent = 'Este número de CNS é válido!';
             }
         } else {
-            soma = (((parseFloat(cns.substring(0, 1)) | 0)) * 15) + 
-            (((parseFloat(cns.substring(1, 2)) | 0)) * 14) + 
-            (((parseFloat(cns.substring(2, 3)) | 0)) * 13) + 
-            (((parseFloat(cns.substring(3, 4)) | 0)) * 12) + 
-            (((parseFloat(cns.substring(4, 5)) | 0)) * 11) + 
-            (((parseFloat(cns.substring(5, 6)) | 0)) * 10) + 
-            (((parseFloat(cns.substring(6, 7)) | 0)) * 9) + 
-            (((parseFloat(cns.substring(7, 8)) | 0)) * 8) + 
-            (((parseFloat(cns.substring(8, 9)) | 0)) * 7) + 
-            (((parseFloat(cns.substring(9, 10)) | 0)) * 6) + 
-            (((parseFloat(cns.substring(10, 11)) | 0)) * 5) + 
-            (((parseFloat(cns.substring(11, 12)) | 0)) * 4) + 
-            (((parseFloat(cns.substring(12, 13)) | 0)) * 3) + 
-            (((parseFloat(cns.substring(13, 14)) | 0)) * 2) + 
-            (((parseFloat(cns.substring(14, 15)) | 0)) * 1);
+            soma = (((parseFloat(cns.substring(0, 1)) | 0)) * 15) +
+                (((parseFloat(cns.substring(1, 2)) | 0)) * 14) +
+                (((parseFloat(cns.substring(2, 3)) | 0)) * 13) +
+                (((parseFloat(cns.substring(3, 4)) | 0)) * 12) +
+                (((parseFloat(cns.substring(4, 5)) | 0)) * 11) +
+                (((parseFloat(cns.substring(5, 6)) | 0)) * 10) +
+                (((parseFloat(cns.substring(6, 7)) | 0)) * 9) +
+                (((parseFloat(cns.substring(7, 8)) | 0)) * 8) +
+                (((parseFloat(cns.substring(8, 9)) | 0)) * 7) +
+                (((parseFloat(cns.substring(9, 10)) | 0)) * 6) +
+                (((parseFloat(cns.substring(10, 11)) | 0)) * 5) +
+                (((parseFloat(cns.substring(11, 12)) | 0)) * 4) +
+                (((parseFloat(cns.substring(12, 13)) | 0)) * 3) +
+                (((parseFloat(cns.substring(13, 14)) | 0)) * 2) +
+                (((parseFloat(cns.substring(14, 15)) | 0)) * 1);
             resto = soma % 11;
             if (resto !== 0) {
-                element.textContent = 'Este numero de CNS não é válido!';
+                element.textContent = 'Este número de CNS não é válido!';
             }
             else {
-                element.textContent = 'Este numero de CNS é válido!';
+                element.textContent = 'Este número de CNS é válido!';
             }
 
         }
@@ -121,7 +121,16 @@ function validarCns(cns) {
 el = document.getElementById("consultar");
 
 el.addEventListener("click", function () {
-    numeroCns = document.querySelector(".input-carteirinha")
-    numeroCns = numeroCns.value.replace(/\s/g, '');
-    validarCns(numeroCns)
+    númeroCns = document.querySelector(".input-carteirinha")
+    númeroCns = númeroCns.value.replace(/\s/g, '');
+    validarCns(númeroCns)
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 13) {
+        // e.preventDefault();
+        númeroCns = document.querySelector(".input-carteirinha")
+        númeroCns = númeroCns.value.replace(/\s/g, '');
+        validarCns(númeroCns)
+    }
 });
