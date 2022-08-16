@@ -54,9 +54,6 @@ main {
 
 .div-validade {
     margin-top: 50px;
-}
-
-.div-validade .span-validade {
     font-size     : 1.5em;
     font-weight   : 800;
     letter-spacing: 1px;
