@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+* {
+    margin         : 0;
+    padding        : 0;
+    font-family    : sans-serif;
+    font-weight    : 300;
+    font-family    : 'Montserrat', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #6e6e6e60 transparent;
+}
+
+body {
+    overflow-x: hidden;
+    font-size : 16px;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+}
+
+main {
+    height         : 100vh;
+    width          : 100vw;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+}
+
+.input-carteirinha {
+    width           : 250px;
+    height          : 50px;
+    font-size       : 1.4em;
+    border          : none;
+    border-bottom   : 1px solid #00000050;
+    background-color: transparent;
+    outline         : 0;
+}
+
+.btn-consultar {
+    width           : 130px;
+    height          : 40px;
+    font-size       : 1.2em;
+    background-color: #74ebd5;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin-top      : 30px;
+    box-shadow      : .5px 5px 5px #000;
+    cursor          : pointer;
+}
+
+.btn-consultar:active {
+    transform: scale(0.9);
+}
+
+.div-validade {
+    margin-top: 50px;
+}
+
+.div-validade .span-validade {
+    font-size     : 1.5em;
+    font-weight   : 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display       : flex;
+    align-items   : center;
+}
