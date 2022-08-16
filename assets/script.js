@@ -38,11 +38,6 @@ function validarCns(cns) {
         element.textContent = 'O número está incorreto, inferior a 15 digitos!';
     } else {
 
-        var soma;
-        var resto;
-        var dv;
-        var pis = new String("");
-        var resultado = new String("");
         if (cns.substring(0, 1) == 1 || cns.substring(0, 1) == 2) {
             pis = cns.substring(0, 11);
             soma = (((parseFloat(pis.substring(0, 1)) | 0)) * 15) +
